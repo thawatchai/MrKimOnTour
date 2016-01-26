@@ -1,0 +1,19 @@
+.pad-top {
+  padding-top: 10px;
+}
+
+footer {
+  padding: 30px 0;
+}
+
+.cover {
+  position: relative;
+  width: 945px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cover img {
+  position: absolute;
+  bottom: 0px;
+}
