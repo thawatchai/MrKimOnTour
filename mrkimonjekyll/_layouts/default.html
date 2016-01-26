@@ -38,6 +38,17 @@
           <img src="/img/24593127236_4e99218c8e_h.jpg" />
         </div>
 
+        <ol class="breadcrumb">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          {% for crumb in page.breadcrumb %}
+            <li>
+              <a href="{{ crumb.link }}">{{ crumb.title }}</a>
+            </li>
+          {% endfor %}
+        </ol>
+
         <h1 class="page-header">{{ page.title }}</h1>
 
         {{ content }}
