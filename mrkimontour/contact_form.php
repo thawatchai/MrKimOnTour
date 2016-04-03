@@ -5,31 +5,6 @@ $breadcrumbs = array(
   array("title" => "Contact", "link" => "/contact")
 );
 
-$msgAlert = "";
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if ($_POST["email"] && $_POST["subject"] && $_POST["content"]) {
-    $msg = new Message();
-    $msg->setSender("thawatchai@gmail.com");
-    $msg->addTo("thawatchai@gmail.com");
-    $msg->setSubject("[MrKimOnTour] " . $_POST["subject"]);
-    $msg->setTextBody($_POST["email"] . "\n\n" . $_POST["content"]);
-    $msg->send();
-
-    $msgAlert = <<<END
-    <div class="alert alert-success">
-      Your email has been sent.
-    </div>
-END;
-
-  } else {
-    $msgAlert = <<<END
-    <div class="alert alert-warning">
-      All fields are required.
-    </div>
-END;
-  }
-}
-
 $content = <<<END
 
 <div class="alert alert-success hidden">
