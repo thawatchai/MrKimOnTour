@@ -28,8 +28,13 @@ $content = <<<END
     <label>Content</label>
     <textarea class="form-control" rows="10" id="content"></textarea>
   </div>
-  <button type="submit" class="btn btn-primary btn-lg" id="contact-form-button">Submit</button>
-  <div id="spinner" class="hidden"><i class="fa fa-spinner fa-spin fa-3x"></i></div>
+  <button type="submit" class="btn btn-primary btn-lg"
+      id="contact-form-button">
+    Submit
+  </button>
+  <div id="spinner" class="hidden">
+    <i class="fa fa-spinner fa-spin fa-3x"></i>
+  </div>
 </form>
 
 END;

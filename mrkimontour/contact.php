@@ -39,15 +39,19 @@ $content = <<<END
 <form method="post">
   <div class="form-group">
     <label>Email</label>
-    <input type="email" class="form-control" name="email" value="{$_POST["email"]}" />
+    <input type="email" class="form-control" name="email"
+      value="{$_POST["email"]}" />
   </div>
   <div class="form-group">
     <label>Subject</label>
-    <input type="text" class="form-control" name="subject" value="{$_POST["subject"]}" />
+    <input type="text" class="form-control" name="subject"
+      value="{$_POST["subject"]}" />
   </div>
   <div class="form-group">
     <label>Content</label>
-    <textarea class="form-control" rows="10" name="content">{$_POST["content"]}</textarea>
+    <textarea class="form-control" rows="10" name="content">
+      {$_POST["content"]}
+    </textarea>
   </div>
   <button type="submit" class="btn btn-primary btn-lg">Submit</button>
 </form>
